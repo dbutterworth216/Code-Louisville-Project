@@ -144,10 +144,15 @@ footer {
   from {opacity: .4} 
   to {opacity: 1}
 }
+/*Media Query - Fixed Navigation for screens/browser windows smaller than 320px*/
+@media only screen and (max-width: 320px) {    
+    h2:first-of-type {
+        padding-top: 50px;
+    }
+}
 
-/*Media Queries are works in progress. Still working on Navigation position.*/
+/*Media Query - Header position and size*/
 @media only screen and (max-width: 445px) {
-   
     .main-heading {
         height: 350px;
     }
@@ -161,8 +166,7 @@ footer {
     }
 }
 
-/*Media Query - Fixed positioning of navigation for smaller screens/browser windows*/
-
+/*Media Query - Fixed positioning of navigation for screens/browser windows smaller than 464px*/
 @media only screen and (max-width: 464px) {
     li:last-of-type {
         padding-bottom: 25px;
