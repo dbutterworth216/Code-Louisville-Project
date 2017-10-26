@@ -144,10 +144,31 @@ footer {
   from {opacity: .4} 
   to {opacity: 1}
 }
-/*Media Query - Fixed Navigation for screens/browser windows smaller than 320px*/
-@media only screen and (max-width: 320px) {    
-    h2:first-of-type {
-        padding-top: 50px;
+
+/*Media Query - Fixed spacing of list elements for certain sized screens*/
+@media screen and (min-width: 465px) and (max-width: 788px) {
+    .first-item {
+        padding-top: 25px;
+    }
+    li:last-of-type {
+        padding-bottom: 25px;
+    }
+}
+
+/*Media Query - Added Borderline between sections for screens/browser windows greater than 465px */
+@media screen and (min-width: 465px) {
+    .borderline {
+        border-bottom: 1.5px solid whitesmoke;
+        width: 60%;
+        margin: auto;
+        padding: 10px 0;
+    }
+}
+
+/*Media Query - Fixed positioning of navigation for screens/browser windows smaller than 464px*/
+@media only screen and (max-width: 464px) {
+    li:last-of-type {
+        padding-bottom: 25px;
     }
 }
 
@@ -166,32 +187,9 @@ footer {
     }
 }
 
-/*Media Query - Fixed positioning of navigation for screens/browser windows smaller than 464px*/
-@media only screen and (max-width: 464px) {
-    li:last-of-type {
-        padding-bottom: 25px;
+/*Media Query - Fixed Navigation for screens/browser windows smaller than 320px*/
+@media only screen and (max-width: 340px) {    
+    h2:first-of-type {
+        padding-top: 50px;
     }
 }
-
-/*Media Query - Added Borderline between sections for screens/browser windows greater than 465px */
-
-@media screen and (min-width: 465px) {
-    .borderline {
-        border-bottom: 1.5px solid whitesmoke;
-        width: 60%;
-        margin: auto;
-        padding: 10px 0;
-    }
-}
-
-/*Media Query - Fixed spacing of list elements for certain sized screens*/
-
-@media screen and (min-width: 465px) and (max-width: 788px) {
-    .first-item {
-        padding-top: 25px;
-    }
-    li:last-of-type {
-        padding-bottom: 25px;
-    }
-}
-
