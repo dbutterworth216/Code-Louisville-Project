@@ -1,9 +1,15 @@
 /*Style Sheet*/
 
 /*Base Settings*/
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-.wrap {
-    min-height: calc(100vh - 7opx);
+
+.main-wrap {
+    min-height: calc(100vh - 70px);
     font-size: 1em;
 }
 
@@ -83,15 +89,8 @@ footer {
     background: linear-gradient(darkgrey, transparent 20%),
                 whitesmoke;
     color: darkgrey;
-    margin: auto;
-    padding: 10px;
     height: 50px;
-}
-
-.footer-text {
-    position: absolute;
-    left: 0;
-    right: 0;
+    padding: 15px;
 }
 
 /*Front Page Slideshow*/
@@ -146,7 +145,7 @@ footer {
 }
 
 /*Media Query - Fixed spacing of list elements for certain sized screens*/
-@media screen and (min-width: 465px) and (max-width: 788px) {
+@media screen and (max-width: 788px) {
     .first-item {
         padding-top: 25px;
     }
